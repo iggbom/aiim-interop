@@ -1,0 +1,33 @@
+{
+  "client_id": "https://iggbom.github.io/aiim-interop/cimd-jwt-inline.json",
+  "client_name": "Curity Interop Test Client (private_key_jwt via inline jwks)",
+  "client_uri": "https://iggbom.github.io/aiim-interop",
+  "redirect_uris": [
+    "http://127.0.0.1:6276/oauth/callback",
+    "http://localhost:6274/oauth/callback",
+    "http://127.0.0.1:8090/callback"
+  ],
+  "grant_types": [
+    "authorization_code",
+    "refresh_token"
+  ],
+  "response_types": [
+    "code"
+  ],
+  "token_endpoint_auth_method": "private_key_jwt",
+  "scope": "openid profile offline_access stocks_read stocks_trade",
+  "software_id": "curity-aiim-interop-2026",
+  "software_version": "1.0.0",
+  "jwks": {
+    "keys": [
+      {
+        "kty": "RSA",
+        "n": "zlxvI2VoKzTlumvNeH5bzzE09Z4oEevXC7EyrZzAQtaQZRWBgNbXhV-qw0oeGeHQ3aibyITWLLbbhC8xV75WUVOo5CT-vX1DJy-Tq4029RSHFt45vR3jgoJIiS1f38viN0PXrtoE8lBJybyPELr13Tll5mVuMDiDVc0JXwWXpxpXAP67hKWBrWaQT2TGsRhA-IixfFnrUssB2pqB5h5i0d5oKlQqtFTIyd4JGAD5gWyTa9zy3-a9EAVfxNkYOzRTS9hStXN3l5j6SwW3xPak0e1bxpKaR895RozzCEzX36cTX4VQLXQe-f3ZVDIspwTUj64sfZ0o0cLYchto1Wbhkw",
+        "e": "AQAB",
+        "kid": "3GrF6y-weAJtK8YBDfze84FrVDRjl2dUStn7EWdDaRs",
+        "use": "sig",
+        "alg": "RS256"
+      }
+    ]
+  }
+}

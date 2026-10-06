@@ -1,0 +1,20 @@
+{
+  "client_id": "https://iggbom.github.io/aiim-interop/cimd-inspector.json",
+  "client_name": "Curity Interop Test Client (Inspector)",
+  "client_uri": "https://iggbom.github.io/aiim-interop",
+  "redirect_uris": [
+    "http://127.0.0.1:6276/oauth/callback",
+    "http://localhost:6274/oauth/callback"
+  ],
+  "grant_types": [
+    "authorization_code",
+    "refresh_token"
+  ],
+  "response_types": [
+    "code"
+  ],
+  "token_endpoint_auth_method": "none",
+  "scope": "openid profile offline_access stocks_read stocks_trade",
+  "software_id": "curity-aiim-interop-2026",
+  "software_version": "1.0.0"
+}

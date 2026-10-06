@@ -1,0 +1,19 @@
+{
+  "client_id": "https://raw.githubusercontent.com/iggbom/aiim-interop/main/cimd-notallowed.json",
+  "client_name": "Unapproved Client (should be refused)",
+  "client_uri": "https://raw.githubusercontent.com/iggbom/aiim-interop/main",
+  "redirect_uris": [
+    "http://127.0.0.1:6276/oauth/callback",
+    "http://localhost:6274/oauth/callback"
+  ],
+  "grant_types": [
+    "authorization_code"
+  ],
+  "response_types": [
+    "code"
+  ],
+  "token_endpoint_auth_method": "none",
+  "scope": "stocks_read",
+  "software_id": "curity-aiim-interop-2026-negative",
+  "software_version": "1.0.0"
+}

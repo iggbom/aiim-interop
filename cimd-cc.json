@@ -1,0 +1,15 @@
+{
+  "client_id": "https://iggbom.github.io/aiim-interop/cimd-cc.json",
+  "client_name": "Curity Interop Test Client (client_credentials)",
+  "client_uri": "https://iggbom.github.io/aiim-interop",
+  "redirect_uris": [],
+  "grant_types": [
+    "client_credentials"
+  ],
+  "response_types": [],
+  "token_endpoint_auth_method": "private_key_jwt",
+  "jwks_uri": "https://iggbom.github.io/aiim-interop/client-jwks.json",
+  "scope": "stocks_read",
+  "software_id": "curity-aiim-interop-2026",
+  "software_version": "1.0.0"
+}
