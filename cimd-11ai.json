@@ -1,0 +1,19 @@
+{
+  "client_id": "https://iggbom.github.io/aiim-interop/cimd-11ai.json",
+  "client_name": "Curity AIIM interop client (11/11 AI pairing, jwks_uri)",
+  "client_uri": "https://curity.io",
+  "redirect_uris": [
+    "http://127.0.0.1:8090/callback",
+    "http://127.0.0.1:6276/oauth/callback"
+  ],
+  "grant_types": [
+    "authorization_code"
+  ],
+  "response_types": [
+    "code"
+  ],
+  "token_endpoint_auth_method": "private_key_jwt",
+  "token_endpoint_auth_signing_alg": "RS256",
+  "jwks_uri": "https://iggbom.github.io/aiim-interop/client-jwks.json",
+  "scope": "mcp:read mcp:tools"
+}
