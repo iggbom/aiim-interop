@@ -51,3 +51,24 @@ repository and must not be.
 
 The documents are generated rather than hand-edited, so the `client_id`, the
 inline `jwks` and `client-jwks.json` cannot drift apart.
+
+## The EMA rehearsal fixture
+
+`stub-op/jwks.json` is not a CIMD document and is not part of any filed interop
+evidence.
+
+It is the public half of a throwaway RSA key belonging to a stub OpenID Provider
+that stands in for a partner IdP while rehearsing Curity's **resource
+authorization server** side of the EMA (ID-JAG) test. Every EMA run so far had
+Curity issuing the ID-JAG and Curity redeeming it, so a foreign issuer and a
+foreign subject have never been exercised. This fixture exists so Curity can be
+pointed at a `jwks_uri` that is not its own.
+
+| | |
+|---|---|
+| Issuer | `https://iggbom.github.io/aiim-interop/stub-op` |
+| JWKS | `https://iggbom.github.io/aiim-interop/stub-op/jwks.json` |
+| `kid` | `stub-op-1` |
+
+The matching private key is not in this repository and must not be. It lives
+beside the stub script in the interop server working directory.
