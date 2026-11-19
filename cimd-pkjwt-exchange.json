@@ -1,0 +1,22 @@
+{
+  "client_id": "https://iggbom.github.io/aiim-interop/cimd-pkjwt-exchange.json",
+  "client_name": "Curity Interop Test Client (private_key_jwt, code + token exchange)",
+  "client_uri": "https://iggbom.github.io/aiim-interop",
+  "redirect_uris": [
+    "http://127.0.0.1:8090/callback",
+    "http://localhost:8090/callback"
+  ],
+  "grant_types": [
+    "authorization_code",
+    "refresh_token",
+    "urn:ietf:params:oauth:grant-type:token-exchange"
+  ],
+  "response_types": [
+    "code"
+  ],
+  "token_endpoint_auth_method": "private_key_jwt",
+  "scope": "openid profile mcp.tools mcp:tools mcp:read offline_access",
+  "software_id": "curity-aiim-interop-2026",
+  "software_version": "1.0.0",
+  "jwks_uri": "https://iggbom.github.io/aiim-interop/client-jwks.json"
+}
